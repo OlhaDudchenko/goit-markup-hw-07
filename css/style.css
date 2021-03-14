@@ -10,6 +10,9 @@
   --list-gap: 30px;
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
   --time: 250ms;
+  --clients-color: #afb1b8;
+  --button-color: #188ce8;
+  --background-color: #2f303a;
 }
 
 ul {
@@ -102,7 +105,7 @@ img {
   color: var(--white);
 }
 
-.navigation {
+.page-header__navigation {
   display: flex;
   align-items: center;
 }
@@ -201,7 +204,7 @@ img {
   height: 600px;
   text-align: center;
   color: var(--white);
-  background-color: #2f303a;
+  background-color: var(--background-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -224,26 +227,6 @@ img {
   color: var(--white);
 }
 
-.button--hero {
-  /* margin-top: 30px; */
-  padding: 10px 32px 10px 32px;
-
-  /* display: inline-block;
-  min-width: 200px;
-  
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  color: var(--white);
-  background-color: var(--blue);
-  border-radius: 4px;
-  border: 1px solid var(--blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer; */
-}
-
 .button {
   display: inline-block;
   min-width: 200px;
@@ -260,6 +243,17 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color var(--time) var(--time-function);
+}
+.button--hero {
+  padding: 10px 32px 10px 32px;
+}
+
+.button--modal {
+  padding: 10px 52px 10px 52px;
+}
+
+.button--footer {
+  padding: 10px 62px 10px 28px;
 }
 /* .............................ГЕРОЙ............................. */
 
@@ -443,7 +437,7 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: #afb1b8;
+  color: var(--clients-color);
   border-radius: 50px;
   transition: background-color var(--time) var(--time-function),
     color var(--time) var(--time-function);
@@ -478,9 +472,9 @@ img {
   margin-right: var(--list-gap);
   width: 170px;
   height: 90px;
-  color: #afb1b8;
+  color: var(--clients-color);
   border-radius: 4px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--clients-color);
   cursor: pointer;
   transition: color var(--time) var(--time-function),
     border var(--time) var(--time-function);
@@ -508,7 +502,7 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 
 .address-list {
@@ -568,6 +562,9 @@ img {
   background-color: var(--blue);
   /* color: var(--white); */
 }
+.social__icon {
+  fill: currentColor;
+}
 
 .social__item {
   margin-right: 10px;
@@ -575,10 +572,6 @@ img {
 
 .social__item:last-child {
   margin-right: 0;
-}
-
-.social__icon {
-  fill: currentColor;
 }
 
 .news {
@@ -665,6 +658,9 @@ img {
 
 .projects-list__wrapper {
   padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .projects-list {
   display: flex;
@@ -676,7 +672,7 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: var(--white);
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
 }
 
 .projects-list :nth-child(3n) {
@@ -742,15 +738,25 @@ img {
     visibility var(--time) var(--time-function);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+} */
+
+/* .backdrop__is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
-}
+} */
+
+/* .backdrop__is-hidden__modal {
+  transform: translate(-50%, -50%) scale(0.9);
+} */
 
 .modal {
   position: absolute;
@@ -763,6 +769,9 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--time) var(--time-function);
+}
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal__button {
@@ -787,11 +796,10 @@ img {
 .modal__icon {
   fill: currentColor;
 }
-
-input:hover + .form-field__icon {
+.form-field:focus-within .form-field__icon {
   fill: var(--blue);
 }
-input:focus + .form-field__icon {
+.form-field:hover .form-field__icon {
   fill: var(--blue);
 }
 
@@ -800,6 +808,7 @@ input:focus + .form-field__icon {
   border-color: var(--blue);
   outline-color: var(--blue);
 }
+
 .form-comment__area:focus,
 .form-comment__area:hover {
   border-color: var(--blue);
@@ -835,11 +844,13 @@ input:focus + .form-field__icon {
   transition: display var(--time) var(--time-function);
 }
 
-.form-check__icon use {
+.icon__use {
   display: none;
+  /* opacity: 0; */
 }
-.form-check__input:checked + .form-check__icon use {
+.form-check__input:checked + * .icon__use {
   display: inline-block;
+  /* opacity: 1; */
 }
 .form-check__input:checked + .form-check__icon {
   border: none;
@@ -941,52 +952,9 @@ input:focus + .form-field__icon {
   text-align: left;
   color: var(--grey);
 }
-.button--modal {
-  padding: 10px 52px 10px 52px;
-
-  /* display: inline-block;
-  min-width: 200px;
-  
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  color: var(--white);
-  border-radius: 4px;
-  background-color: var(--blue);
-  border: 1px solid var(--blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: background-color var(--time) var(--time-function); */
-}
 .button:focus,
 .button:hover {
-  background-color: #188ce8;
-}
-
-.button--footer {
-  padding: 10px 62px 10px 28px;
-}
-
-.button-wrapper {
-  margin-left: 12px;
-
-  /* display: inline-block;
-  min-width: 200px;
-  min-height: 50px;
-  
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  color: var(--white);
-  background-color: var(--blue);
-  border: 1px solid var(--blue);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer; */
+  background-color: var(--button-color);
 }
 
 .footer-form__mail::placeholder {
@@ -1014,6 +982,7 @@ input:focus + .form-field__icon {
 
 .button-wrapper {
   position: relative;
+  margin-left: 12px;
 }
 .button__icon {
   position: absolute;

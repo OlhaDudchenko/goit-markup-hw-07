@@ -17,7 +17,7 @@
     <!-- Шапка сайта -->
     <header class="page-header">
       <div class="container page-header__container">
-        <nav class="navigation">
+        <nav class="page-header__navigation">
           <a href="" class="logo">
             <span class="logo logo--blue">Web</span>
             <span class="logo logo--black">Studio</span>
@@ -550,8 +550,8 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+    <div class="backdrop backdrop__is-hidden" data-modal>
+      <div class="modal is-hidden__modal">
         <button class="modal__button" data-modal-close>
           <svg class="modal__icon" width="11" height="11">
             <use href="./images/icons.svg#vector"></use>
@@ -628,8 +628,12 @@
                 name="verification"
                 value="agreement"
               />
-              <svg class="form-check__icon" width="16" height="15">
-                <use href="./images/icons.svg#icon-check"></use>
+
+              <svg class="form-check__icon icon" width="16" height="15">
+                <use
+                  href="./images/icons.svg#icon-check"
+                  class="icon__use"
+                ></use>
               </svg>
               Соглашаюсь с рассылкой и принимаю
               <a class="form-check__link">Условия договора</a>
