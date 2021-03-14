@@ -1,19 +1,4 @@
-/* Основное */
-
-:root {
-  --main-color: #212121;
-  --grey: #757575;
-  --footer-mail-number: rgba(255, 255, 255, 0.6);
-  --white: #ffffff;
-  --blue: #2196f3;
-  --black: #000000;
-  --list-gap: 30px;
-  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --time: 250ms;
-  --clients-color: #afb1b8;
-  --button-color: #188ce8;
-  --background-color: #2f303a;
-}
+@import "./utils/variables";
 
 ul {
   list-style: none;
@@ -22,8 +7,8 @@ ul {
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
-  color: var(--main-color);
-  background-color: var(--white);
+  color: $main-color;
+  background-color: $white;
 }
 
 img {
@@ -96,13 +81,13 @@ img {
   text-decoration: none;
 }
 .logo--blue {
-  color: var(--blue);
+  color: $blue;
 }
 .logo--black {
-  color: var(--black);
+  color: $black;
 }
 .logo--white {
-  color: var(--white);
+  color: $white;
 }
 
 .page-header__navigation {
@@ -132,15 +117,15 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--main-color);
-  transition: color var(--time) var(--time-function);
+  color: $main-color;
+  transition: color $time $time-function;
 }
 .site-nav__link:hover,
 .site-nav__link:focus {
-  color: var(--blue);
+  color: $blue;
 }
 .site-nav__link--current {
-  color: var(--blue);
+  color: $blue;
 }
 
 .site-nav__link--current::after {
@@ -152,7 +137,7 @@ img {
   height: 4px;
   width: 100%;
   border-radius: 2px;
-  background-color: var(--blue);
+  background-color: $blue;
 }
 
 .list-cont {
@@ -178,13 +163,13 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--grey);
-  transition: color var(--time) var(--time-function);
+  color: $grey;
+  transition: color $time $time-function;
 }
 
 .list-cont__link:hover,
 .list-cont__link:focus {
-  color: var(--blue);
+  color: $blue;
 }
 .list-cont__icon {
   margin-right: 10px;
@@ -203,8 +188,8 @@ img {
   max-width: 1600px;
   height: 600px;
   text-align: center;
-  color: var(--white);
-  background-color: var(--background-color);
+  color: $white;
+  background-color: $background-color;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -224,7 +209,7 @@ img {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white);
+  color: $white;
 }
 
 .button {
@@ -236,13 +221,13 @@ img {
   line-height: 1.8;
   letter-spacing: 0.06em;
   text-decoration: none;
-  color: var(--white);
-  background-color: var(--blue);
+  color: $white;
+  background-color: $blue;
   border-radius: 4px;
-  border: 1px solid var(--blue);
+  border: 1px solid $blue;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: background-color var(--time) var(--time-function);
+  transition: background-color $time $time-function;
 }
 .button--hero {
   padding: 10px 32px 10px 32px;
@@ -266,7 +251,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--grey);
+  color: $grey;
 }
 .features-list__title {
   margin-top: 0px;
@@ -284,7 +269,7 @@ img {
 .features-list__card {
   /* outline: 1px solid yellow; */
   width: calc((100% - 90px) / 4);
-  margin-right: var(--list-gap);
+  margin-right: $list-gap;
 }
 .features-list :nth-child(4) {
   margin-right: 0px;
@@ -331,7 +316,7 @@ img {
 .services-list__card {
   /* outline: 1px solid yellow; */
   width: calc((100% - 60px) / 3);
-  margin-right: var(--list-gap);
+  margin-right: $list-gap;
   position: relative;
 }
 
@@ -352,7 +337,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--white);
+  color: $white;
 }
 .services-list__overlay {
   position: absolute;
@@ -395,7 +380,7 @@ img {
 .team-list__position {
   margin-top: 10px;
   margin-bottom: 16px;
-  color: var(--grey);
+  color: $grey;
 }
 .team-list {
   display: flex;
@@ -406,9 +391,9 @@ img {
 .team-list__card {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
-  padding-bottom: var(--list-gap);
+  padding-bottom: $list-gap;
   text-align: center;
-  background-color: var(--white);
+  background-color: $white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -437,17 +422,16 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: var(--clients-color);
+  color: $clients-color;
   border-radius: 50px;
-  transition: background-color var(--time) var(--time-function),
-    color var(--time) var(--time-function);
+  transition: background-color $time $time-function, color $time $time-function;
   /* outline: 1px solid red; */
 }
 
 .social-list__link:hover,
 .social-list__link:focus {
-  color: var(--white);
-  background-color: var(--blue);
+  color: $white;
+  background-color: $blue;
 }
 .social-list__icon {
   fill: currentColor;
@@ -469,15 +453,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: var(--list-gap);
+  margin-right: $list-gap;
   width: 170px;
   height: 90px;
-  color: var(--clients-color);
+  color: $clients-color;
   border-radius: 4px;
-  border: 1px solid var(--clients-color);
+  border: 1px solid $clients-color;
   cursor: pointer;
-  transition: color var(--time) var(--time-function),
-    border var(--time) var(--time-function);
+  transition: color $time $time-function, border $time $time-function;
 }
 .clients-list__card:nth-child(6n) {
   margin-right: 0px;
@@ -485,8 +468,8 @@ img {
 
 .clients-list__link:hover,
 .clients-list__link:focus {
-  color: var(--blue);
-  border: 1px solid var(--blue);
+  color: $blue;
+  border: 1px solid $blue;
 }
 .clients-list__icon {
   fill: currentColor;
@@ -502,7 +485,7 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--background-color);
+  background-color: $background-color;
 }
 
 .address-list {
@@ -514,13 +497,13 @@ img {
 .address-list__city {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: var(--white);
+  color: $white;
 }
 .address-list__link {
   display: block;
   margin-top: 9px;
   margin-bottom: 0px;
-  color: var(--footer-mail-number);
+  color: $footer-mail-number;
   text-decoration: none;
 }
 
@@ -535,7 +518,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--white);
+  color: $white;
 }
 
 .social__list {
@@ -549,18 +532,18 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: var(--white);
+  color: $white;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--time) var(--time-function);
+  transition: background-color $time $time-function;
 
   /* outline: 1px solid red; */
 }
 
 .social__link:hover,
 .social__link:focus {
-  background-color: var(--blue);
-  /* color: var(--white); */
+  background-color: $blue;
+  /* color: $white; */
 }
 .social__icon {
   fill: currentColor;
@@ -596,20 +579,19 @@ img {
   line-height: 1.6;
   text-align: center;
   text-decoration: none;
-  color: var(--main-color);
+  color: $main-color;
   background-color: #f5f4fa;
   border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  transition: color var(--time) var(--time-function),
-    background-color var(--time) var(--time-function),
-    box-shadow var(--time) var(--time-function);
+  transition: color $time $time-function, background-color $time $time-function,
+    box-shadow $time $time-function;
 }
 
 .filters__button:hover,
 .filters__button:focus {
-  color: var(--white);
-  background-color: var(--blue);
+  color: $white;
+  background-color: $blue;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -634,7 +616,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--main-color);
+  color: $main-color;
 }
 .projects-list__descrip {
   margin-top: 0px;
@@ -642,13 +624,13 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
-  color: var(--grey);
+  color: $grey;
 }
 
 .projects-list__link {
   display: block;
   text-decoration: none;
-  transition: box-shadow var(--time) var(--time-function);
+  transition: box-shadow $time $time-function;
 }
 .projects-list__link:hover,
 .projects-list__link:focus {
@@ -671,7 +653,7 @@ img {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  background-color: var(--white);
+  background-color: $white;
   /* border: 1px solid #eeeeee; */
 }
 
@@ -685,13 +667,13 @@ img {
 /* .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--features-list-gap));
-  margin-left: calc(-1 * var(--features-list-gap));
+  margin-top: calc(-1 * $features-list-gap);
+  margin-left: calc(-1 * $features-list-gap);
 }
 .projects-list {
-  flex-basis: calc(100% / 3 - var(--features-list-gap));
-  margin-top: var(--features-list-gap);
-  margin-left: var(--features-list-gap);
+  flex-basis: calc(100% / 3 - $features-list-gap);
+  margin-top: $features-list-gap;
+  margin-left: $features-list-gap;
 } */
 
 .overlay {
@@ -705,7 +687,7 @@ img {
   font-weight: 400;
   line-height: 1.55;
   text-align: left;
-  color: var(--white);
+  color: $white;
 }
 
 .overlay__box {
@@ -718,7 +700,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   opacity: 0;
-  transition: transform var(--time) var(--time-function);
+  transition: transform $time $time-function;
 }
 
 .projects-list__card:hover .overlay__box {
@@ -734,11 +716,10 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--time) var(--time-function),
-    visibility var(--time) var(--time-function);
+  transition: opacity $time $time-function, visibility $time $time-function;
 }
 
-.is-hidden {
+.backdrop__is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -765,12 +746,12 @@ img {
   width: 528px;
   height: 581px;
   padding: 40px;
-  background-color: var(--white);
+  background-color: $white;
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--time) var(--time-function);
+  transition: transform $time $time-function;
 }
-.is-hidden .modal {
+.bacdrop__is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
@@ -785,34 +766,34 @@ img {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: inherit;
   cursor: pointer;
-  transition: color var(--time) var(--time-function);
+  transition: color $time $time-function;
 }
 .modal__button:hover,
 .modal__button:focus {
-  color: var(--blue);
+  color: $blue;
 }
 .modal__icon {
   fill: currentColor;
 }
 .form-field:focus-within .form-field__icon {
-  fill: var(--blue);
+  fill: $blue;
 }
 .form-field:hover .form-field__icon {
-  fill: var(--blue);
+  fill: $blue;
 }
 
 .form-field__input:focus,
 .form-field__input:hover {
-  border-color: var(--blue);
-  outline-color: var(--blue);
+  border-color: $blue;
+  outline-color: $blue;
 }
 
 .form-comment__area:focus,
 .form-comment__area:hover {
-  border-color: var(--blue);
-  outline-color: var(--blue);
+  border-color: $blue;
+  outline-color: $blue;
 }
 
 .form-check__input {
@@ -836,12 +817,12 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 8.38px;
-  border: 2px solid var(--main-color);
+  border: 2px solid $main-color;
   border-radius: 2px;
   background-color: inherit;
-  fill: var(--main-color);
+  fill: $main-color;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: display var(--time) var(--time-function);
+  transition: display $time $time-function;
 }
 
 .icon__use {
@@ -872,7 +853,7 @@ img {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color var(--time) var(--time-function);
+  transition: border-color $time $time-function;
 }
 .form-comment__area::placeholder {
   font-size: 12px;
@@ -902,17 +883,17 @@ img {
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
-  color: var(--main-color);
+  color: $main-color;
 }
 .form-check {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   text-align: left;
-  color: var(--grey);
+  color: $grey;
 }
 .form-check__link {
-  color: var(--blue);
+  color: $blue;
   text-decoration-line: underline;
   cursor: pointer;
 }
@@ -929,7 +910,7 @@ img {
   font: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color var(--time) var(--time-function);
+  transition: border-color $time $time-function;
 }
 
 .form-field__wrapper {
@@ -939,7 +920,7 @@ img {
   position: absolute;
   top: 11px;
   left: 12px;
-  transition: fill var(--time) var(--time-function);
+  transition: fill $time $time-function;
 }
 
 .form-field__title,
@@ -950,11 +931,11 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
   text-align: left;
-  color: var(--grey);
+  color: $grey;
 }
 .button:focus,
 .button:hover {
-  background-color: var(--button-color);
+  background-color: $button-color;
 }
 
 .footer-form__mail::placeholder {
