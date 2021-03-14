@@ -1,21 +1,6 @@
+@import "./base/modern-normalize";
 @import "./utils/variables";
-
-ul {
-  list-style: none;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  color: $main-color;
-  background-color: $white;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+@import "./base/defaults";
 
 .visually-hidden {
   position: absolute;
