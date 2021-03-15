@@ -12,7 +12,7 @@
 @import'./components/team';
 @import'./components/social-team';
 @import'./components/clients';
-
+@import'./components/footer';
 /* ................................................. */
 /* .......................ХЕДЕР......................... */
 /* ........................ХЕДЕР.............................. */
@@ -46,52 +46,7 @@
 
 /* .........................ФУТЕР..................... */
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: $background-color;
-}
 
-.address-list {
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-}
-.address-list__city {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: $white;
-}
-.address-list__link {
-  display: block;
-  margin-top: 9px;
-  margin-bottom: 0px;
-  color: $footer-mail-number;
-  text-decoration: none;
-}
-
-
-.social__title,
-.news__title {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  color: $white;
-}
-
-
-
-.news {
-  margin-left: 93px;
-}
 
 /* .........................ФУТЕР..................... */
 
