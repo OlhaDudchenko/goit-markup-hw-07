@@ -40,6 +40,16 @@
 .services {
   padding-bottom: 94px;
 }
+.services{
+    &__title,
+ {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.7;
+  text-align: center;}
+}
 
 .services-list {
   display: flex;
@@ -71,7 +81,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: $white;}
+  color: $white;
+}
 }
 
 .services-list{

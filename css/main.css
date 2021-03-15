@@ -612,6 +612,15 @@ img {
   padding-bottom: 94px;
 }
 
+.services__title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.7;
+  text-align: center;
+}
+
 .services-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,19 +665,12 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* ................................................. */
-/* .......................ХЕДЕР......................... */
-/* ........................ХЕДЕР.............................. */
-/* .............................ГЕРОЙ............................. */
-/* .............................ГЕРОЙ............................. */
-/* ...............................ПРЕИМУЩЕСТВА.................... */
-/* ...............................ПРЕИМУЩЕСТВА.................... */
-/* ...........................ЧЕМ..МЫ..ЗАНИМАЕМСЯ................... */
-/* ...........................ЧЕМ..МЫ..ЗАНИМАЕМСЯ................... */
-/* .................................НАША...КОМАНДА.......... */
-.services__title,
-.team__title,
-.clients__title {
+.team {
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+
+.team__title {
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 700;
@@ -677,9 +679,26 @@ img {
   text-align: center;
 }
 
-.team {
-  padding-bottom: 94px;
-  background-color: #f5f4fa;
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.team-list :nth-child(4) {
+  margin-right: 0px;
+}
+
+.team-list__card {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list__member {
@@ -696,28 +715,23 @@ img {
   color: #757575;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-  /* outline: 1px solid tomato; */
-}
-
-.team-list__card {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-  padding-bottom: 30px;
+/* ................................................. */
+/* .......................ХЕДЕР......................... */
+/* ........................ХЕДЕР.............................. */
+/* .............................ГЕРОЙ............................. */
+/* .............................ГЕРОЙ............................. */
+/* ...............................ПРЕИМУЩЕСТВА.................... */
+/* ...............................ПРЕИМУЩЕСТВА.................... */
+/* ...........................ЧЕМ..МЫ..ЗАНИМАЕМСЯ................... */
+/* ...........................ЧЕМ..МЫ..ЗАНИМАЕМСЯ................... */
+/* .................................НАША...КОМАНДА.......... */
+.clients__title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.7;
   text-align: center;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  /* outline: 1px solid yellow; */
-}
-
-.team-list :nth-child(4) {
-  margin-right: 0px;
 }
 
 .social-list__item {
