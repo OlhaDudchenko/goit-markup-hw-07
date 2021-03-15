@@ -1,101 +1,3 @@
-// .social {
-//   margin-left: 70px;
-// }
-// .social__title,
-// .news__title {
-//   margin-top: 0px;
-//   margin-bottom: 20px;
-//   font-family: "Roboto";
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.7;
-//   color: $white;
-// }
-// .footer__container {
-//   display: flex;
-//   align-items: baseline;
-// }
-// .footer {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   background-color: $background-color;
-// }
-
-// .address-list {
-//   margin-top: 20px;
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.7;
-// }
-// .address-list__city {
-//   margin-top: 0px;
-//   margin-bottom: 0px;
-//   color: $white;
-// }
-// .address-list__link {
-//   display: block;
-//   margin-top: 9px;
-//   margin-bottom: 0px;
-//   color: $footer-mail-number;
-//   text-decoration: none;
-// }
-
-
-
-// .news__title {
-//   margin-top: 0px;
-//   margin-bottom: 20px;
-//   font-family: "Roboto";
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.7;
-//   color: $white;
-// }
-
-
-
-// .news {
-//   margin-left: 93px;
-// }
-
-// .social__list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-// .social__link {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 44px;
-//   height: 44px;
-//   color: $white;
-//   border-radius: 50px;
-//   background-color: rgba(255, 255, 255, 0.1);
-//   transition: background-color $time $time-function;
-
-//   /* outline: 1px solid red; */
-// }
-
-// .social__link:hover,
-// .social__link:focus {
-//   background-color: $blue;
-//   /* color: $white; */
-// }
-// .social__icon {
-//   fill: currentColor;
-// }
-
-// .social__item {
-//   margin-right: 10px;
-// }
-
-// .social__item:last-child {
-//   margin-right: 0;
-// }
-// 
-
-
 
 .footer {
   padding-top: 60px;
@@ -175,7 +77,8 @@
   color: $white;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color $time $time-function;
+  @include animated(background-color);
+  
   
   &:hover,&:focus {
   background-color: $blue;}

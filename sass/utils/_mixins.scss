@@ -1,0 +1,3 @@
+@mixin animated($type) {
+     transition: $type $time $time-function;
+    }

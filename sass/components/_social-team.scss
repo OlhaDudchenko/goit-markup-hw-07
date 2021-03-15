@@ -1,36 +1,4 @@
 
-// .social-list__item {
-//   margin-right: 10px;
-// }
-
-// .social-list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-// .social-list:nth-last-child(4) {
-//   margin-right: 0px;
-// }
-// .social-list__link {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 44px;
-//   height: 44px;
-//   color: $clients-color;
-//   border-radius: 50px;
-//   transition: background-color $time $time-function, color $time $time-function;
-//   /* outline: 1px solid red; */
-// }
-
-// .social-list__link:hover,
-// .social-list__link:focus {
-//   color: $white;
-//   background-color: $blue;
-// }
-// .social-list__icon {
-//   fill: currentColor;
-// }
 
 .social-list {
   @extend %ul;
@@ -57,7 +25,9 @@
   height: 44px;
   color: $clients-color;
   border-radius: 50px;
-  transition: background-color $time $time-function, color $time $time-function;}
+  @include animated(background-color);
+  @include animated(color);
+  }
   
   &__link:hover,
   &__link:focus {

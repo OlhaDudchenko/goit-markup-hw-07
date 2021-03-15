@@ -1,44 +1,4 @@
-// .site-nav {
-//   margin-left: 93px;
-//   display: flex;
-// }
 
-// .site-nav__item:not(:last-child) {
-//   margin-right: 50px;
-// }
-
-// .site-nav__link {
-//   position: relative;
-//   display: inline-block;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.1;
-//   letter-spacing: 0.02em;
-//   text-decoration: none;
-//   color: $main-color;
-//   transition: color $time $time-function;
-// }
-// .site-nav__link:hover,
-// .site-nav__link:focus {
-//   color: $blue;
-// }
-// .site-nav__link--current {
-//   color: $blue;
-// }
-
-// .site-nav__link--current::after {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   content: "";
-//   display: block;
-//   height: 4px;
-//   width: 100%;
-//   border-radius: 2px;
-//   background-color: $blue;
-// }
 
 .site-nav {
   @extend %ul;
@@ -66,7 +26,8 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $main-color;
-    transition: color $time $time-function;
+    @include animated(color);
+   
   }
 }
 .site-nav {
