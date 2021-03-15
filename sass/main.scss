@@ -14,6 +14,8 @@
 @import'./components/clients';
 @import'./components/footer';
 @import'./components/filters-button';
+@import'./components/portfolio-projects';
+
 /* ................................................. */
 /* .......................ХЕДЕР......................... */
 /* ........................ХЕДЕР.............................. */
@@ -52,114 +54,13 @@
 /* .........................ФУТЕР..................... */
 
 /* ................................ПОРТФОЛИО.....................  */
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  /* background-color: goldenrod; */
-}
+
 /* ..............................КНОПКИ.ФИЛЬТРЫ................. */
 
 /* ..............................КНОПКИ.ФИЛЬТРЫ................. */
 
 /* ............................УСЛУГИ.КОМПАНИИ....................... */
-.projects-list__title {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $main-color;
-}
-.projects-list__descrip {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.9;
-  color: $grey;
-}
 
-.projects-list__link {
-  display: block;
-  text-decoration: none;
-  transition: box-shadow $time $time-function;
-}
-.projects-list__link:hover,
-.projects-list__link:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects-list__wrapper {
-  padding: 20px 24px;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-}
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 34px;
-}
-.projects-list__card {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-  background-color: $white;
-  /* border: 1px solid #eeeeee; */
-}
-
-.projects-list :nth-child(3n) {
-  margin-right: 0;
-}
-.projects-list :nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-/* .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * $features-list-gap);
-  margin-left: calc(-1 * $features-list-gap);
-}
-.projects-list {
-  flex-basis: calc(100% / 3 - $features-list-gap);
-  margin-top: $features-list-gap;
-  margin-left: $features-list-gap;
-} */
-
-.overlay {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay__text {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.55;
-  text-align: left;
-  color: $white;
-}
-
-.overlay__box {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 63px 24px;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translatey(100%);
-  opacity: 0;
-  transition: transform $time $time-function;
-}
-
-.projects-list__card:hover .overlay__box {
-  transform: translatey(0);
-  opacity: 1;
-}
 /* ............................УСЛУГИ.КОМПАНИИ....................... */
 
 .backdrop {
