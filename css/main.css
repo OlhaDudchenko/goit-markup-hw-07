@@ -288,14 +288,6 @@ img {
   height: auto;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .site-nav, .list-cont, .features-list, .services-list, .social-list, .clients-list, .social__list, .filters, .projects-list {
   padding: 0px;
   margin: 0px;
@@ -314,6 +306,14 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-header__container {
