@@ -275,10 +275,6 @@ summary {
   display: list-item;
 }
 
-ul {
-  list-style: none;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -300,26 +296,10 @@ img {
   margin-right: auto;
 }
 
-.site-nav,
-.list-cont,
-.features-list,
-.services-list,
-.team-list,
-.filters,
-.projects-list,
-.social__list,
-.clients-list,
-.social-list {
+.site-nav, .list-cont, .features-list, .services-list, .social-list, .clients-list, .social__list, .filters, .projects-list {
   padding: 0px;
   margin: 0px;
-}
-
-.features,
-.services,
-.team,
-.clients {
-  padding-top: 94px;
-  /* background-color: goldenrod; */
+  list-style: none;
 }
 
 .visually-hidden {
@@ -570,6 +550,10 @@ img {
   background-size: 70px;
 }
  */
+.features {
+  padding-top: 94px;
+}
+
 .features-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,6 +609,7 @@ img {
 
 .services {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .services__title {
@@ -682,6 +667,7 @@ img {
 
 .team {
   padding-bottom: 94px;
+  padding-top: 94px;
   background-color: #f5f4fa;
 }
 
@@ -779,6 +765,7 @@ img {
 
 .clients {
   padding-bottom: 94px;
+  padding-top: 94px;
   text-align: center;
 }
 

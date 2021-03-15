@@ -54,8 +54,11 @@
   background-size: 70px;
 }
  */
-
+  
+ .features{padding-top: 94px;}
+ 
  .features-list {
+   @extend %ul;
   display: flex;
   flex-wrap: wrap;
 

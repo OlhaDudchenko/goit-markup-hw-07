@@ -39,6 +39,7 @@
 
 .services {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .services{
     &__title,
@@ -52,6 +53,7 @@
 }
 
 .services-list {
+  @extend %ul;
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
