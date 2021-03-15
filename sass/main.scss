@@ -15,6 +15,7 @@
 @import'./components/footer';
 @import'./components/filters-button';
 @import'./components/portfolio-projects';
+@import'./components/modal&backdrop';
 
 /* ................................................. */
 /* .......................ХЕДЕР......................... */
@@ -63,74 +64,7 @@
 
 /* ............................УСЛУГИ.КОМПАНИИ....................... */
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity $time $time-function, visibility $time $time-function;
-}
 
-.backdrop__is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
-/* .backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-} */
-
-/* .backdrop__is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
-} */
-
-/* .backdrop__is-hidden__modal {
-  transform: translate(-50%, -50%) scale(0.9);
-} */
-
-.modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  background-color: $white;
-  border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform $time $time-function;
-}
-.bacdrop__is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
-}
-
-.modal__button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: inherit;
-  cursor: pointer;
-  transition: color $time $time-function;
-}
-.modal__button:hover,
-.modal__button:focus {
-  color: $blue;
-}
-.modal__icon {
-  fill: currentColor;
-}
 .form-field:focus-within .form-field__icon {
   fill: $blue;
 }
@@ -287,10 +221,7 @@
   text-align: left;
   color: $grey;
 }
-.button:focus,
-.button:hover {
-  background-color: $button-color;
-}
+
 
 .footer-form__mail::placeholder {
   font-weight: 400;
