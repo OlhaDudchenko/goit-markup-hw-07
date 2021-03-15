@@ -8,6 +8,7 @@
 @import'./components/hero';
 @import'./components/button';
 @import'./components/features';
+@import'./components/services';
 
 /* ................................................. */
 /* .......................ХЕДЕР......................... */
@@ -25,48 +26,7 @@
 
 /* ...........................ЧЕМ..МЫ..ЗАНИМАЕМСЯ................... */
 
-.services-list {
-  /* outline: 1px solid tomato; */
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-.services-list__card {
-  /* outline: 1px solid yellow; */
-  width: calc((100% - 60px) / 3);
-  margin-right: $list-gap;
-  position: relative;
-}
 
-.services-list :nth-child(3) {
-  margin-right: 0px;
-}
-.services-list__link {
-  display: block;
-  text-decoration: none;
-}
-.services {
-  padding-bottom: 94px;
-}
-
-.services-list__title {
-  margin: 0;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  color: $white;
-}
-.services-list__overlay {
-  position: absolute;
-  bottom: 0;
-  height: 70px;
-  width: 370px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  text-align: center;
-  background-color: rgba(47, 48, 58, 0.8);
-}
 /* ...........................ЧЕМ..МЫ..ЗАНИМАЕМСЯ................... */
 
 /* .................................НАША...КОМАНДА.......... */
