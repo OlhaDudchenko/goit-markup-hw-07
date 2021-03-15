@@ -1134,10 +1134,7 @@ img {
   pointer-events: none;
   visibility: hidden;
 } */
-/* .backdrop__is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
-} */
-/* .backdrop__is-hidden__modal {
+/* .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 } */
 .backdrop {
@@ -1153,13 +1150,13 @@ img {
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.backdrop__is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.backdrop.is-hidden.modal {
+.backdrop__is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.9);
           transform: translate(-50%, -50%) scale(0.9);
 }
