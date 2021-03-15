@@ -14,3 +14,47 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid tomato;
+  background-color: indianred; */
+}
+
+.site-nav,
+.list-cont,
+.features-list,
+.services-list,
+.team-list,
+.filters,
+.projects-list,
+.social__list,
+.clients-list,
+.social-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.features,
+.services,
+.team,
+.clients {
+  padding-top: 94px;
+  /* background-color: goldenrod; */
+}

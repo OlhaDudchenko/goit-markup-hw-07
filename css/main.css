@@ -338,13 +338,20 @@ img {
   /* background-color: goldenrod; */
 }
 
-/* ................................................. */
-/* .......................ХЕДЕР......................... */
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .page-header--border {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__container {
+.page-header__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,30 +381,20 @@ img {
   color: #ffffff;
 }
 
-.page-header__navigation {
+.site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.site-nav {
+.site-nav__below {
   margin-left: 93px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-/* .site-nav .pages {
-  outline: 2px solid tomato;
-  background-color: yellow;
-} */
 .site-nav__link {
   position: relative;
   display: inline-block;
@@ -413,8 +410,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
 }
 
@@ -434,6 +430,10 @@ img {
   background-color: #2196f3;
 }
 
+/* АЛЬТЕРНАТИВА */
+/* .list-cont .item + .item {
+  margin-left: 50px;
+} */
 .list-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,10 +448,6 @@ img {
   margin-right: 50px;
 }
 
-/* АЛЬТЕРНАТИВА */
-/* .list-cont .item + .item {
-  margin-left: 50px;
-} */
 .list-cont__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,8 +468,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-cont__link:hover,
-.list-cont__link:focus {
+.list-cont__link:hover, .list-cont__link:focus {
   color: #2196f3;
 }
 
@@ -482,6 +477,8 @@ img {
   fill: currentColor;
 }
 
+/* ................................................. */
+/* .......................ХЕДЕР......................... */
 /* ........................ХЕДЕР.............................. */
 /* .............................ГЕРОЙ............................. */
 .hero {
