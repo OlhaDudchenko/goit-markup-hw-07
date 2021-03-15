@@ -1,0 +1,84 @@
+// .clients {
+//   padding-bottom: 94px;
+//   text-align: center;
+// }
+
+// .clients-list {
+//   display: flex;
+//   margin-top: 50px;
+// }
+// .clients-list__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-right: $list-gap;
+//   width: 170px;
+//   height: 90px;
+//   color: $clients-color;
+//   border-radius: 4px;
+//   border: 1px solid $clients-color;
+//   cursor: pointer;
+//   transition: color $time $time-function, border $time $time-function;
+// }
+// .clients-list__card:nth-child(6n) {
+//   margin-right: 0px;
+// }
+
+// .clients-list__link:hover,
+// .clients-list__link:focus {
+//   color: $blue;
+//   border: 1px solid $blue;
+// }
+// .clients-list__icon {
+//   fill: currentColor;
+// }
+
+.clients {
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.clients{
+    &__title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.7;
+  text-align: center;}
+}
+
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.clients-list{
+    &__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: $list-gap;
+  width: 170px;
+  height: 90px;
+  color: $clients-color;
+  border-radius: 4px;
+  border: 1px solid $clients-color;
+  cursor: pointer;
+  transition: color $time $time-function, border $time $time-function;
+
+&:hover,
+&:focus {
+  color: $blue;
+  border: 1px solid $blue;}}
+
+}
+.clients-list{
+    &__card:nth-child(6n) {
+  margin-right: 0px;}
+}
+
+.clients-list{
+    &__icon {
+  fill: currentColor;}
+}
