@@ -288,7 +288,7 @@ img {
   height: auto;
 }
 
-.site-nav, .list-cont, .features-list, .services-list, .social-list, .clients-list, .social__list, .filters, .projects-list {
+.site-nav, .list-cont, .features-list, .services-list, .team-list, .social-list, .clients-list, .social__list, .filters, .projects-list {
   padding: 0px;
   margin: 0px;
   list-style: none;

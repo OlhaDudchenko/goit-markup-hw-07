@@ -18,6 +18,7 @@
 }
 
 .team-list {
+  @extend %ul;
   display: flex;
   margin-top: 50px;
 
