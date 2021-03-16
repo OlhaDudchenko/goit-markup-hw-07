@@ -25,8 +25,8 @@
   height: 44px;
   color: $clients-color;
   border-radius: 50px;
-  @include animated(background-color);
-  @include animated(color);
+  @include animated(background-color,color);
+  
   }
   
   &__link:hover,

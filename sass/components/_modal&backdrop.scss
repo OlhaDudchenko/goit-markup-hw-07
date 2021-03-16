@@ -19,9 +19,8 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  @include animated(opacity);
-  @include animated(visibility);
-  
+  @include animated(opacity, visibility);
+ 
 }
 
 .backdrop{
@@ -33,6 +32,11 @@
 .backdrop__is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);}
 
+  // .backdrop{
+  //   &__is-hidden {
+  //   .modal {
+  // transform: translate(-50%, -50%) scale(0.9);}
+  //   }
 
 
 

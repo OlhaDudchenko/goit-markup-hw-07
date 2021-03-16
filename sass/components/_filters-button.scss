@@ -26,9 +26,8 @@
   border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  @include animated(color);
-  @include animated(background-color);
-  @include animated(box-shadow);
+  @include animated(color, background-color, box-shadow);
+
   
 
     &:hover,&:focus {
