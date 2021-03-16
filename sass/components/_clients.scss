@@ -34,8 +34,8 @@
   border-radius: 4px;
   border: 1px solid $clients-color;
   cursor: pointer;
-  @include animated(color);
-  @include animated(border);
+  @include animated(color, border);
+ 
   
 
 &:hover,
@@ -45,11 +45,11 @@
 
 }
 .clients-list{
+    &__icon {
+  fill: currentColor;}
+}
+.clients-list{
     &__card:nth-child(6n) {
   margin-right: 0px;}
 }
 
-.clients-list{
-    &__icon {
-  fill: currentColor;}
-}

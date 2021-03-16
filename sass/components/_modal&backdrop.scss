@@ -29,14 +29,14 @@
   pointer-events: none;
   visibility: hidden;}
 }
-.backdrop__is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);}
+// .backdrop__is-hidden .modal {
+//   transform: translate(-50%, -50%) scale(0.9);}
 
-  // .backdrop{
-  //   &__is-hidden {
-  //   .modal {
-  // transform: translate(-50%, -50%) scale(0.9);}
-  //   }
+  .backdrop{
+    &__is-hidden {
+    .modal {
+  transform: translate(-50%, -50%) scale(0.9);}}
+    }
 
 
 
