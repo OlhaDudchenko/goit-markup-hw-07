@@ -1408,5 +1408,6 @@ img {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   cursor: pointer;
+  margin-left: 7px;
 }
 /*# sourceMappingURL=main.css.map */
